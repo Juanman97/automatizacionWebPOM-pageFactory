@@ -13,8 +13,8 @@ import org.junit.jupiter.api.Assertions;
 public class CustomCareStepDefinition extends WebUI {
     private static final Logger LOGGER = Logger.getLogger(CustomCareStepDefinition.class);
 
-    CustomCareModel customCareModel;
-    CustomCarePage customCarePage;
+    private CustomCareModel customCareModel;
+    private CustomCarePage customCarePage;
 
     @Given("el usuario se encuentra en la pagina web de Contact Us")
     public void elUsuarioSeEncuentraEnLaPaginaWebDeContactUs() {

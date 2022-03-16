@@ -1,5 +1,7 @@
 package com.parasoft.parabank.model.customcare;
 
+import java.util.UUID;
+
 public class CustomCareModel {
 
     private String name;

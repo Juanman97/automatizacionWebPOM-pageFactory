@@ -13,8 +13,8 @@ import org.junit.jupiter.api.Assertions;
 public class LogInStepDefinition extends WebUI {
     private static Logger LOGGER = Logger.getLogger(LogInStepDefinition.class);
 
-    LoginPage loginPage;
-    LoginModel loginModel;
+    private LoginPage loginPage;
+    private LoginModel loginModel;
 
     @Given("El usuario se encuentra en la pagina web del banco")
     public void elUsuarioSeEncuentraEnLaPaginaWebDelBanco() {

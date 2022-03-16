@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
-public class CommonActionOnPages extends BaseSikuli{
+public class CommonActionOnPages {
     private static final Logger LOGGER = Logger.getLogger(CommonActionOnPages.class);
     private WebDriver driver;
     private WebDriverWait webDriverExplicitWait; //para tiempos explícitos
