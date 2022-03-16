@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Contactarme con la empresa a traves de la seccion Contact Us" tests="2" skipped="0" failures="2" errors="0" timestamp="2022-03-16T03:50:34" hostname="JUANMAN-PC" time="6.459">
+  <properties/>
+  <testcase name="Envio de mensaje con todos los datos del formulario" classname="Contactarme con la empresa a traves de la seccion Contact Us" time="3.758">
+    <failure message="org.opentest4j.AssertionFailedError" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
+	at com.parasoft.parabank.stepdefinition.customcare.CustomCareStepDefinition.elUsuarioIngresaTodosLosCamposDelFormularioYConfirma(CustomCareStepDefinition.java:44)
+	at ✽.el usuario ingresa todos los campos del formulario y confirma(file:///D:/SofkaU/Introduccion%20a%20la%20automatizacion/Intellij/retoAutomatizacionWebPOMPageFactory/src/test/resources/features/customCare.feature:13)
+</failure>
+  </testcase>
+  <testcase name="Envio de mensaje sin ningun dato del formulario" classname="Contactarme con la empresa a traves de la seccion Contact Us" time="2.701">
+    <failure message="org.opentest4j.AssertionFailedError" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
+	at com.parasoft.parabank.stepdefinition.customcare.CustomCareStepDefinition.elUsuarioNoIngresaNingunCampoDelFormularioYConfirma(CustomCareStepDefinition.java:60)
+	at ✽.el usuario no ingresa ningun campo del formulario y confirma(file:///D:/SofkaU/Introduccion%20a%20la%20automatizacion/Intellij/retoAutomatizacionWebPOMPageFactory/src/test/resources/features/customCare.feature:17)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 48313
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 15, 2022 10:50:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 40797
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 15, 2022 10:50:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>
