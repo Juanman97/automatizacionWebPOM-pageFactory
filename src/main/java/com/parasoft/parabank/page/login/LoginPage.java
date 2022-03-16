@@ -16,7 +16,6 @@ public class LoginPage extends CommonActionOnPages {
 
     private static Logger LOGGER = Logger.getLogger(LoginPage.class);
     private LoginModel loginModel;
-    private static final String MODEL_NULL_MESSAGE = "El modelo del formulario es nulo";
 
     //Localizadores para input de datos
     @CacheLookup

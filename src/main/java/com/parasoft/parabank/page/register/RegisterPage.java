@@ -12,7 +12,6 @@ import org.openqa.selenium.support.FindBy;
 public class RegisterPage extends CommonActionOnPages {
     private static Logger LOGGER = Logger.getLogger(RegisterPage.class);
     private RegisterModel registerModel;
-    private static final String MODEL_NULL_MESSAGE = "El modelo del formulario es nulo";
 
     //Localizadores para navegación
     @CacheLookup

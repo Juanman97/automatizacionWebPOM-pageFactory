@@ -11,7 +11,6 @@ import org.openqa.selenium.support.FindBy;
 public class CustomCarePage extends CommonActionOnPages {
     private static final Logger LOGGER = Logger.getLogger(CustomCarePage.class);
     private CustomCareModel customCareModel;
-    private static final String MODEL_NULL_MESSAGE = "El modelo del formulario es nulo";
 
     //Localizadores para navegación
     @CacheLookup

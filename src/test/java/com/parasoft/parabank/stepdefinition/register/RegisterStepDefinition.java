@@ -3,7 +3,7 @@ package com.parasoft.parabank.stepdefinition.register;
 import com.parasoft.parabank.model.register.RegisterModel;
 import com.parasoft.parabank.page.register.RegisterPage;
 import com.parasoft.parabank.stepdefinition.setup.WebUI;
-import com.parasoft.parabank.util.RandomUserGenerator;
+import static com.parasoft.parabank.util.RandomUserGenerator.RandomUserGeneratorFunction;
 import com.parasoft.parabank.util.Seconds;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -33,7 +33,7 @@ public class RegisterStepDefinition extends WebUI {
             registerModel.setZipCode("410010");
             registerModel.setPhone("12345678");
             registerModel.setSSN("99999999999");
-            registerModel.setUsername(RandomUserGenerator.RandomUserGeneratorFunction());
+            registerModel.setUsername(RandomUserGeneratorFunction());
             registerModel.setPassword("12345");
             registerModel.setWrongConfirmPassword("54321");
         } catch (Exception e) {
@@ -54,8 +54,8 @@ public class RegisterStepDefinition extends WebUI {
             Assertions.fail(e.getMessage());
         }
     }
-    @Then("el sistema muestra un mensaje de bienvenida con el nombre completo del usuario y la confirmacion de creacion de la cuenta")
-    public void elSistemaMuestraUnMensajeDeBienvenidaConElNombreCompletoDelUsuarioYLaConfirmacionDeCreacionDeLaCuenta() {
+    @Then("el sistema muestra un mensaje de bienvenida con el username y la confirmacion de creacion de la cuenta")
+    public void elSistemaMuestraUnMensajeDeBienvenidaConElUsernameYLaConfirmacionDeCreacionDeLaCuenta() {
         Assertions.assertEquals(registerModel.getUsername(), registerPage.correctRegistrationNameResult());
         Assertions.assertTrue(registerPage.correctRegistrationMessageResult());
         quitDriver();

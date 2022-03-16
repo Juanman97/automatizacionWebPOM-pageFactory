@@ -61,11 +61,6 @@ public class CommonActionOnPages {
         return webDriverExplicitWait.until(elementToBeClickable(webElement)).getText();
     }
 
-    protected void selectDropdownList(WebElement webElement, String text) {
-        Select selectList = new Select(webElement);
-        selectList.selectByVisibleText(text);
-    }
-
     protected boolean isDisplayed(WebElement webElement) {
         return webDriverExplicitWait.until(elementToBeClickable(webElement)).isDisplayed();
     }
